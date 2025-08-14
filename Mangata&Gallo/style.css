@@ -1,0 +1,333 @@
+:root{
+    --padding: 0 10rem;
+    --text:black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: var(--text);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1rem;
+}
+p{
+    color: rgb(43, 42, 42);
+}
+body{
+    background-color: antiquewhite;
+}
+.btn{
+    margin: 1rem;
+    font-size: 1rem;
+    width: auto;
+    height: auto;
+    padding: .3rem;
+    background-color: rgb(255, 159, 50);
+    transition: .2s;
+    border: none;
+    border-radius: .3rem;
+}
+.btn:hover{
+    background-color:rgb(255, 174, 81) ;
+}
+.btn:active{
+    transform: scale(1.2);
+}
+.like{
+    font-size: 1.4rem;
+    padding: 0rem .2rem;
+}
+
+section{
+    min-height: 100vh;
+    width: 100vw;
+    padding: var(--padding);
+}
+header{
+    position: fixed;
+    padding: var(--padding);
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(255, 230, 162, 0.74);
+}
+nav >ul, header div ul{
+    display: flex;
+}
+ul>li{
+    margin: 0 1rem;
+}
+ul>a{
+    padding: 1rem;
+}
+.logo{
+    width: 7vw;
+}
+
+#home{
+    padding-top: 7vh;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(255, 230, 162);
+}
+
+
+#collections{
+    text-align: center;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#categorie{
+    margin-top: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    gap: 2rem;
+}
+.card{
+    width: 25rem;
+    height: 15rem;
+    border: 3px solid rgb(247, 189, 31);
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.icone{
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.icone>p{
+    border-radius: 50%;
+    background-color: rgb(247, 189, 31);
+    width: 4rem;
+    height: 4rem;
+    margin: .4rem;
+    font-weight: bolder;
+}
+
+#product{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.product{
+    width: 20rem;
+    height: 25rem;
+    border: 2px solid rgb(247, 189, 31);
+    border-radius: .5rem;   
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+.productImage{
+    background-color: wheat;
+    border-radius: .5rem;
+    width: 18rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+}
+.price{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: hsl(34, 70%, 93%);
+}
+#about aside:first-child{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 4rem;
+}
+.btn-about{
+    width: 15rem;
+}
+
+.feedback-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    background-color: wheat;
+    height: 60vh;
+}
+
+#about aside:last-child{
+    background-color: rgb(22, 22, 22);
+    width: 100vw;
+    height: 45vh;
+    padding: var(--padding);
+    text-align: center;
+}
+
+.garanti h2, .garanti h3{
+    color: white;
+}
+.garanti p{
+    color: rgb(195, 207, 207);
+}
+.garanti > div{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.garanti  .card{
+    background-color: rgb(48, 46, 46);
+    width: 20vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(247, 189, 31);
+    border-radius: .8rem;
+}
+.garanti .card div{
+    width: 18vw;
+    height: 10vh;
+}
+
+#contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:0 18vw;
+}
+
+#contact > aside{
+    text-align: center;
+    padding-top: 13vh;
+    width: 100%;
+}
+
+.coordonne{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.coordonne > div{
+    width: 20vw;
+    aspect-ratio: 2/1;
+    border-radius: 1rem;
+    border: 1px solid rgb(247, 189, 31);
+    background-color: rgb(255, 239, 209);
+}
+.address, .hours{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#contact aside:last-child{
+    width: 43vw;
+    height: 50vh;
+    padding: 3vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.form{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background:rgb(253, 225, 171) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+input{
+    text-align: center;
+    border: none;
+    border-radius: .4rem;
+    height: 3rem;
+    min-width: 12rem;
+}
+#mail{
+    width:24rem;
+}
+.diamand{
+      animation: spin 2s linear infinite;
+    
+}
+.diamand:hover{
+    animation: none;
+}
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(360deg); }
+}
+
+footer{
+    background-color: rgb(22, 22, 22);
+    height: 40vh;
+    max-width: 100vw;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer{
+    display: flex;
+
+    gap: 10rem;
+}
+footer p, footer a{
+    color: rgb(187, 180, 180);
+}
+
+.liked{
+    color: rgb(255, 179, 25) ;
+    background-color: rgb(31, 30, 30);
+}

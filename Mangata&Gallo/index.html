@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangata and Gallo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="module">
+    </script>
+    <script type="module" defer>
+        const $like = $(".like");
+        const $btn = $(this)
+        $like.on("click", function(){
+            $(this).toggleClass("liked");
+        });
+        $("form").on('click', '.btn-submit', (e) => {
+            e.preventDefault();
+            alert("💎Thanks You💎")
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div><img class="logo" src="./picture/Asset 1@3x.png" alt="logo Mangata & Gallo"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <ul>
+                <li><a href="#">🔍</a></li>
+                <li><a href="#">💎</a></li>
+                <li><a href="#">📬</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home">
+                <div style="font-size:4rem;">
+                ⚜️
+                </div>
+                <h1 class="largeDescription">
+                    Timeless Elegance <br> for Life's Precious Moments
+                </h1>
+                <div class="slowDescription">
+                    Handcrafted jewelry designed to celebrate your most treasured occasions - <br> engagements, weddings, and anniversaries
+                </div>
+                <div>
+                    <button  class="btn"><a href="#categorie">Explore the collection</a></button>
+                </div>
+            </div>
+        </section>
+        <section id="collections">
+            <div>
+                <h1>Featured Collections</h1>
+                <p>Discover our signature pieces crafted with precision and passion</p>
+            </div>
+            <aside id="categorie">
+                <div class="card">
+                    <div class="icone">
+                        <p>♡</p>
+                    </div>
+                    <div class="card-content">
+                        <h3>engagement Rings</h3>
+                        <p>Exquisite diamonds set in precious metals to mark your perfect moment</p>
+                    </div>
+                    <button class="btn-categorie btn">View Collection</button>
+                </div>
+                <div class="card">
+                    <div class="icone">
+                        <p>♕</p>
+                    </div>
+                    <div class="card-content">
+                        <h3>Wedding Bands</h3>
+                        <p>Classic and contempory designs to symbolize your eternal bond</p>
+                    </div>
+                    <button class="btn-categorie btn">View Collection</button>
+                </div>
+                <div class="card">
+                    <div class="icone">
+                        <p>☆</p>
+                    </div>
+                    <div class="card-content">
+                        <h3>Anniversary Gifts</h3>
+                        <p>Celebrate milestones with our curated Anniversary jewelry collection</p>
+                    </div>
+                    <button class="btn-categorie btn">View Collection</button>
+                </div>
+            </aside>
+            <aside id="product">
+                <div class="product">
+                    <div class="productImage">
+                        <p style="font-size: 8rem;">💎</p>
+                    </div>
+                    <div class="productName">
+                        <h3>Solitaire Diamong Ring</h3>
+                    </div>
+                    <div class="price">$9,950</div>
+                    <div class="choiceClient">
+                        <button class="btn-Product btn">Quick View</button>
+                        <button class="like btn">♥︎</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="productImage">
+                        <p style="font-size: 8rem;">🔮</p>
+                    </div>
+                    <div class="productName">
+                        <h3>Platinum Wedding Band</h3>
+                    </div>
+                    <div class="price">$7,150</div>
+                    <div class="choiceClient">
+                        <button class="btn-Product btn">Quick View</button>
+                        <button class="like btn">♥︎</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="productImage">
+                        <p style="font-size: 8rem;">🔹</p>
+                    </div>
+                    <div class="productName">
+                        <h3>Sapphire Earrings</h3>
+                    </div>
+                    <div class="price">$2,950</div>
+                    <div class="choiceClient">
+                        <button class="btn-Product btn">Quick View</button>
+                        <button class="like btn">♥︎</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="productImage">
+                        <p style="font-size: 8rem;">🔷</p>
+                    </div>
+                    <div class="productName">
+                        <h3>Gold Tennis Necklace</h3>
+                    </div>
+                    <div class="price">$4,850</div>
+                    <div class="choiceClient">
+                        <button class="btn-Product btn">Quick View</button>
+                        <button class="like btn">♥︎</button>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <section id="about">
+            <aside>
+                <div class="feedback">
+                    <h2>Meet Mariana, Founder & Master Craftsperson</h2>
+                    <p>With over 15 years of experience in diamond cutting and metal forging, Mariana Founded Mangata & GAllo in her Austin workshop with a vision to create timeless that celebrate life's most precious Moments</p>
+                    <p>Each piece is meticulously Handcrafted using traditional techniques combined with modern design sensibilites, ensuring every customer receives a truly unique and exceptional piece of jewelry</p>
+                    <button class="btn btn-about"> Learn More About Our Story</button>
+                </div>
+                <div class="feedback-profile" style="font-size: 10rem;">
+                    👨‍🎓
+                </div>
+            </aside>
+            <aside class="garanti">
+                <h2>Why Choose Mangata&Gallo?</h2>
+                <p>Excellence in every detail, passion in every piece</p>
+                <div>
+                    <div class="card">
+                        <div style="font-size: 4rem;">🛡️</div>
+                        <h3>Lifetime Guarantee</h3>
+                        <p>Every piece comes with our comprehensive lifetime warranty</p>
+                    </div>
+                    <div class="card">
+                        <div style="font-size: 4rem;">🚛</div>
+                        <h3>Free Shipping</h3>
+                        <p>Complimentary  insured shipping on all orders over $500</p>
+                    </div>
+                    <div class="card">
+                        <div style="font-size: 4rem;">⏱️</div>
+                        <h3>30-Day Returns</h3>
+                        <p>Not completely satisfied? Return within 30 days for full refund</p>
+                    </div>
+                    <div class="card">
+                        <div style="font-size: 4rem;">🔧</div>
+                        <h3>Custom Design</h3>
+                        <p>Work directly with Mariana to create your dream piece</p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <section id="contact">
+            <aside>
+                <div>
+                <h2>Visit Our Austin Workshop</h2>
+                <p>Experience our craftsmanship firsthand at our boutique workshop in the heart of Austin, Texas</p>
+                </div>
+                <div class="coordonne">
+                    <div class="address">
+                        <div style="font-size: 2rem;">📍</div>
+                        <h3>Address</h3>
+                        <div>
+                            <p>123 Craft Lane</p>
+                            <p>Austin, Texas 78701</p>
+                            <p>United States</p>
+                        </div>
+                    </div>
+                    <div class="hours">
+                        <div style="font-size: 2rem;">🕒</div>
+                        <h3>Hours</h3>
+                        <div>
+                            <p>Tuesday - Saturday</p>
+                            <p>10:00 AM - 6:00 PM</p>
+                            <p>Closed Sunday & Monday</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <aside>
+                <div class="diamand" style="font-size: 8rem; width: 14vw;">
+                    💎
+                </div>
+                <form class="form">
+                    <div style="margin-top:2rem ;">
+                        <h2>NewsLetters</h2>
+                    </div>
+                    <div style="margin-top:2rem ;">
+                        <input type="text" name="fname" id="fname" placeholder="Muhamad">
+                        <input type="text" name="lname" id="lname" placeholder="NDIATH">
+                    </div>
+                    <div>
+                        <input type="email" name="mail" id="mail" placeholder="exemple@gmail.com">
+                    </div>
+                    <div>
+                        <button class="btn btn-submit">Submit</button>
+                    </div>
+                </form>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div>
+                <img style="width: 30vw;" src="./picture/Asset 4@3x.png" alt="logo Mangata & Gallo">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <img style="width: 18vw;" src="./picture/Asset 3@3x.png" alt="logo Mangata & Gallo">
+            </div>
+        </div>
+        <div style="text-align: center;">
+             <p>&copy; 2025 Ndiath. All rights reserved.</p>
+             <p>Any reproduction, distribution, or use of the content, in whole or in part, is strictly prohibited without prior written permission.</p>
+        </div>
+    </footer>
+</body>
+</html>
