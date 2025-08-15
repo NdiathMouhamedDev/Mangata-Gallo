@@ -137,6 +137,7 @@ ul>a{
 
 #product{
     display: flex;
+    justify-content: center;
     gap: 1rem;
     align-items: center;
 }
